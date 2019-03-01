@@ -12,22 +12,28 @@
       <h1>Pig Dice</h1>
       <div class="row">
         <div class="col-md-6">
+          <div class="panel-default">
+
+
+          </div>
             <div id="player1">
               <h2>Player1</h2>
               <p>First roll: <span class="first-roll"></span></p>
-              <p>Last roll: <span class="last-roll"></span></p>
+              <p>second roll: <span class="second-roll"></span></p>
+              <p>last roll: <span class="last-roll"></span> </p>
               <p> <span class="score"></span> </p>
-              <button type="submit" class="btn btn-danger">Roll</button>
+              <button type="submit"class="btn btn-danger" id="p1" onclick="Try()">Roll</button>
+
           </div>
       </div>
 
-      <div class="col-md-6">
+      <div class="col-md-6" id=play>
           <div id="player2">
             <h2>Player2</h2>
             <p>First roll: <span class="first-roll"></span></p>
             <p>Last roll: <span class="last-roll"></span></p>
             <p> <span class="score"></span> </p>
-            <button type="submit" class="btn btn-danger">Roll</button>
+            <button type="submit"id="p2" class="btn btn-danger" onclick="Try2()" >Roll</button>
         </div>
     </div>
 
