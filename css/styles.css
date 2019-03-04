@@ -1,7 +1,11 @@
 
  body{
    color: white;
-   background-image: url("../images/dc.jpeg")
+   background-image: url("../images/jn.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+  position: fixed;
+
 
  }
 #play{
@@ -11,4 +15,7 @@ float: left;
 }
 #next {
   display: none;
+  font-size: 2em;
+
+  font-weight: bold;
 }
