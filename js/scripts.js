@@ -11,12 +11,15 @@
    var player1 = Math.floor(Math.random()*6)+1;
    document.getElementById('p1').innerHTML = player1;
     play.push(player1);
-    if (play==1) {
-      alert("OOps stop");
 
+    if (play==1) {
+      $("#p1").hide();
+      $("#h1").hide();
 
     }
+  $(".first-roll1").text(play);
  }
+
 
 // $("#p1").submit(function(){
 //   event.preventDefault();
@@ -28,7 +31,8 @@ function Try2(){
   var player2 = Math.floor(Math.random()*6)+1;
   document.getElementById('p2').innerHTML = player2;
   play.push(player2);
-  if (play==1);{
+  if (play==1){
   alert("OOps stop");
 }
+  $(".first-roll").text(play);
 }
