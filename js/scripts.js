@@ -16,18 +16,28 @@
     total.push(player1);
     $("#p2").hide();
     $("#h2").hide();
+    var sum = total
+    totals=total.reduce(function(total,play){
+      return total+play;
+    },0);
+
+
 
     if (play==1) {
       $("#p2").show();
       $("#h2").show();
       $("#p1").hide();
       $("#h1").hide();
-      $("div#next").toggle();
-
+      $(".col-md-4").toggle(1500);
+      $(".col-md-4").toggle(1500);
     }
-    $(".score").append(total);
+    else {
+
+
+    $(".score").append(sum);
   $(".first-roll1").text(play);
  }
+}
 
 
 // $("#p1").submit(function(){
@@ -35,7 +45,9 @@
 //   var player1 = Math.floor(Math.random()*6);
 //   document.getElementById('p1').innerHTML = player1
 // });
+
 function Try2(){
+
   var play = [];
   var player2 = Math.floor(Math.random()*6)+1;
   document.getElementById('p2').innerHTML = player2;
@@ -45,6 +57,8 @@ function Try2(){
   $("#h1").show();
   $("#p2").hide();
   $("#h2").hide();
+  $(".col-md-4").toggle(1500);
+  $(".col-md-4").toggle(1500);
   // $("div#next").slideDown();
 }
   $(".first-roll").text(play);
