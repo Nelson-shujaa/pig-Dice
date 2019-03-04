@@ -9,3 +9,6 @@ margin-left: 40em;
 margin-bottom: 70em;
 float: left;
 }
+#next {
+  display: none;
+}
