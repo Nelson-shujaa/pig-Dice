@@ -7,10 +7,13 @@
 // var player2 = [0];
 // var game = player1
  function Try() {
+   //preventDefault();
+   var total = [];
    var play = [];
    var player1 = Math.floor(Math.random()*6)+1;
    document.getElementById('p1').innerHTML = player1;
     play.push(player1);
+    total.push(player1);
     $("#p2").hide();
     $("#h2").hide();
 
@@ -22,6 +25,7 @@
       $("div#next").toggle();
 
     }
+    $(".score").append(total);
   $(".first-roll1").text(play);
  }
 
@@ -41,7 +45,7 @@ function Try2(){
   $("#h1").show();
   $("#p2").hide();
   $("#h2").hide();
-  $("div#next").toggle();
+  // $("div#next").slideDown();
 }
   $(".first-roll").text(play);
 }
