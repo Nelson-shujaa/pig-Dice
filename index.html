@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <link href="https://fonts.googleapis.com/css?family=Nova+Mono" rel="stylesheet">
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.3.1.js"></script>
@@ -10,6 +11,26 @@
   <body>
     <div class="container">
       <h1>Pig Dice</h1>
+      <div class="intro">
+        <h2>Welcome to pig Dice:</h2>
+        <p>Here are some ground rules:</p><ol>
+          <li>Roll Dice</li>
+          <li>Hold the score if you are satisfied</li>
+          <li>If you arent satisfied you can continue rolling the dice as much as you can.</li>
+          <li>Please not that if you continue rolling the dice and score "1" your score for that round will be null </li>
+          <li> <strong>Most importantly have alot of fuun!!!</strong> </li>
+        </ol>
+        <button type="button"  id="btn"class="btn btn-success" onclick="show()">Start</button>
+
+      </div>
+      <div class="winner">
+        <p>Congratulations player1 you win!!</p>
+      </div>
+      <div class="win2">
+        <p>Congratulations player2 you win!!</p>
+
+      </div>
+      <button type="button" id="rs" class="btn btn-warning" onclick="start()">Restart</button>
       <div class="row">
         <div class="col-md-6">
           <div class="panel-default">
@@ -47,10 +68,6 @@
      </div>
     </div>
   </div>
-      <div class="winner">
-        <p>Congratulations player1 you win!!<span class="win1"></span></p>
-        <p>Congratulations player2 you win!! <span class="win2"></span></p>
 
-      </div>
   </body>
 </html>

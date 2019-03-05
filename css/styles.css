@@ -29,3 +29,38 @@ float: left;
   font-weight: bold;
 
 }
+
+h1 {
+  margin-left: 14em;
+  border: 2px solid white;
+  border-radius: 0.5em;
+  margin-right: 10em;
+  padding-left: 1.8em;
+  font-family: 'Nova Mono', monospace;
+
+}
+.row {
+  display: none;
+}
+.intro {
+
+  margin-left: 15em;
+}
+ .win2, .winner {
+   display: none;
+   padding-top: 2em;
+   text-align: center;
+   font-size: 2em;
+   font-family: 'Nova Mono', monospace;
+ }
+
+ #btn{
+  margin-left: 17em;
+}
+#rs {
+  display: none;
+  margin-left: 42em;
+  margin-top: 2em;
+  width: 8em;
+  height: 3em;
+}
