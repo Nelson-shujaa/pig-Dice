@@ -23,3 +23,9 @@ float: left;
 .round{
   margin-left: 50em;
 }
+#hold {
+  display: none;
+  font-size: 2em;
+  font-weight: bold;
+
+}

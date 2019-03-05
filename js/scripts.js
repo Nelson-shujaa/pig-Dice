@@ -3,16 +3,12 @@
       Player = player;
 
   }
-// var  player1 = [0];
-// var player2 = [0];
-// var game = player1
-var total = 0;
-var totalscore = 0;
-
+  var total = 0;
+  var totalscore = 0;
+  var total1 = 0;
+  var totalscore1 = 0;
  function Try() {
-   //preventDefault();
-   //var total = [];
-
+   var player1 = 0;
    var player1 = Math.floor(Math.random()*6)+1;
    document.getElementById('p1').innerHTML = player1;
     //play.push(player1);
@@ -20,48 +16,79 @@ var totalscore = 0;
     //alert(total);
     $("#p2").hide();
     $("#h2").hide();
-    total+=player1;
-
-
-
     if (player1==1) {
+      total= 0;
+      $(".score").text(total);
       $("#p2").show();
       $("#h2").show();
       $("#p1").hide();
       $("#h1").hide();
-      $(".col-md-4").toggle(1500);
-      $(".col-md-4").toggle(1500);
+      $("#next").toggle(1500);
+      $("#next").toggle(1500);
+       player1=0;
     }
     else {
 
-
+     total+=player1;
     $(".score").text(total);
   $(".first-roll1").text(player1);
  }
- return false;
+}
+
+function hold() {
+totalscore+=total
+$(".scorei").text(totalscore);
+$("#hold").toggle(1500);
+$("#hold").toggle(1500);
+$("#p2").show();
+$("#h2").show();
+$("#p1").hide();
+$("#h1").hide();
+// if (totalscore==100){
+//   $(".win1").toggle();
+//   $(".win1").toggle();
+total=0;
+$(".score").text(total);
 }
 
 
-// $("#p1").submit(function(){
-//   event.preventDefault();
-//   var player1 = Math.floor(Math.random()*6);
-//   document.getElementById('p1').innerHTML = player1
-// });
-
 function Try2(){
-
-  var play = [];
   var player2 = Math.floor(Math.random()*6)+1;
   document.getElementById('p2').innerHTML = player2;
-  play.push(player2);
-  if (play==1){
-  $("#p1").show();
+
+  if (player2==1){
+    total1=0;
+  $(".score1").text(total1);
+  $("#p1").show()
   $("#h1").show();
   $("#p2").hide();
   $("#h2").hide();
-  $(".col-md-4").toggle(1000);
-  $(".col-md-4").toggle(1000);
-  // $("div#next").slideDown();
+  $("#next").toggle(1500);
+  $("#next").toggle(1500);
+  player2=0;
+
 }
-  $(".first-roll").text(play);
+else {
+  total1+=player2;
+  $(".score1").text(total1);
+  $(".first-roll2").text(player2);
+}
+}
+
+function hold2(){
+  totalscore1+=total1;
+  //(".score1").text(total);
+  $(".score2").text(totalscore1);
+  $("#p1").show()
+  $("#h1").show();
+  $("#p2").hide();
+  $("#h2").hide();
+  $("#hold").toggle(1500);
+  $("#hold").toggle(1500);
+  // if (totalscore==100){
+  //   $("winner.win2").toggle();
+  //   $(".win2").toggle();
+  // }
+    total1=0;
+  $(".score1").text(totalscore1);
 }
