@@ -1,7 +1,11 @@
 # Triangle Tracker
+
 #### This is my Last school project, 18,02/2017
-#### By **[Nelson-shujaa(https://github.com/Nelson-shujaa)**
+
+#### By **\[Nelson-shujaa(<https://github.com/Nelson-shujaa>)**
+
 ## Description
+
 This is basically a normal dice game.
 It has two players, player 1 and player2.
 The dice has 6 sides.
@@ -9,19 +13,23 @@ If the dice rolls at 1 it shifts to the next player.
 The first person to get to 100 wins!!!
 The Restart button refreshes the page.
 
-
-
-
 ## Setup/Installation Requirements
-* To use this application:
-- 'git clone https://github.com/Nelson-shujaa/pig-Dice.git'
-- 'cd pig-Dice'
-- 'atom' .  
+
+-   To use this application:
+
+
+-   'git clone <https://github.com/Nelson-shujaa/pig-Dice.git>'
+-   'cd pig-Dice'
+-   'atom' .  
 
 ## Technologies Used
+
 Atom,terminal, css, javaScript,bootstrap 3.3.1 , jquery.
+
 ## Support and contact details
+
 nelsonzachariah@gmail.com
+
 ### License
 
 Copyright (c) 2019 Nelson-shujaa
