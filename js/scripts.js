@@ -9,7 +9,7 @@
   //User interface logic
   function start() {
     location.reload();
-     $(".intro").toggle(500);
+    // $(".intro").toggle(500);
 
   }
   function show() {

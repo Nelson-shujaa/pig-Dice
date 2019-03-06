@@ -1,73 +1,75 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <link href="https://fonts.googleapis.com/css?family=Nova+Mono" rel="stylesheet">
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <script src="js/jquery-3.3.1.js"></script>
-    <script src="js/scripts.js"></script>
-    <title>pigDice</title>
-  </head>
-  <body>
-    <div class="container">
-      <h1>Pig Dice</h1>
-      <div class="intro">
-        <h2>Welcome to pig Dice:</h2>
-        <p>Here are some ground rules:</p><ol>
-          <li>Roll Dice</li>
-          <li>Hold the score if you are satisfied</li>
-          <li>If you arent satisfied you can continue rolling the dice as much as you can.</li>
-          <li>Please not that if you continue rolling the dice and score "1" your score for that round will be null </li>
-          <li> <strong>Most importantly have alot of fuun!!!</strong> </li>
-        </ol>
-        <button type="button"  id="btn"class="btn btn-success" onclick="show()">Start</button>
 
-      </div>
-      <div class="winner">
-        <p>Congratulations player1 you win!!</p>
-      </div>
-      <div class="win2">
-        <p>Congratulations player2 you win!!</p>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Nova+Mono" rel="stylesheet">
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-3.3.1.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>pigDice</title>
+</head>
 
-      </div>
-      <button type="button" id="rs" class="btn btn-warning" onclick="start()">Restart</button>
-      <div class="row">
-        <div class="col-md-6">
-          <div class="panel-default">
+<body>
+  <div class="container">
+    <h1>Pig Dice</h1>
+    <div class="intro">
+      <h2>Welcome to pig Dice:</h2>
+      <p>Here are some ground rules:</p>
+      <ol>
+        <li>Roll Dice</li>
+        <li>Hold the score if you are satisfied</li>
+        <li>If you arent satisfied you can continue rolling the dice as much as you can.</li>
+        <li>Please not that if you continue rolling the dice and score "1" your score for that round will be null </li>
+        <li> <strong>Most importantly have alot of fuun!!!</strong> </li>
+      </ol>
+      <button type="button" id="btn" class="btn btn-success" onclick="show()">Start</button>
 
+    </div>
+    <div class="winner">
+      <p>Congratulations player1 you win!!</p>
+    </div>
+    <div class="win2">
+      <p>Congratulations player2 you win!!</p>
 
-          </div>
-            <div id="player1">
-              <h2>Player1</h2>
-              <p>Roll:<span class="first-roll1"></span></p>
-              <p>Round score:<span class="score"></span> </p>
-              <p>Total score:<span class="scorei"></span> </p>
-              <button type="button"class="btn btn-danger" id="p1" onclick="Try()">Roll</button>
-              <button type="submit" class="btn btn-primary" id="h1" onclick="hold()">Hold</button>
-      </div>
+    </div>
+    <button type="button" id="rs" class="btn btn-warning" onclick="start()">Restart</button>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="panel-default">
+        </div>
+        <div id="player1">
+          <h2>Player1</h2>
+          <p>Roll:<span class="first-roll1"></span></p>
+          <p>Round score:<span class="score"></span> </p>
+          <p>Total score:<span class="scorei"></span> </p>
+          <button type="button" class="btn btn-danger" id="p1" onclick="Try()">Roll</button>
+          <button type="submit" class="btn btn-primary" id="h1" onclick="hold()">Hold</button>
+        </div>
 
-      <div class="col-md-4" id="next">
-        <p>You scored "1" it's the next players turn</p>
+        <div class="col-md-4" id="next">
+          <p>You scored "1" it's the next players turn</p>
 
-      </div>
-      <div class="col-md-4"id=hold >
-        <p>Keep holding on till your next turn</p>
-      </div>
+        </div>
+        <div class="col-md-4" id=hold>
+          <p>Keep holding on till your next turn</p>
+        </div>
 
-      <div class="col-md-6" id=play>
+        <div class="col-md-6" id=play>
           <div id="player2">
             <h2>Player2</h2>
             <p>Roll: <span class="first-roll2"></span></p>
             <p>Round score: <span class="score1"></span></p>
             <p>Total score:<span class="score2"></span> </p>
-            <button type="submit"id="p2" class="btn btn-danger" onclick="Try2()" >Roll</button>
+            <button type="submit" id="p2" class="btn btn-danger" onclick="Try2()">Roll</button>
             <button type="submit" class="btn btn-primary" id="h2" onclick="hold2()">Hold</button>
+          </div>
         </div>
-    </div>
 
-     </div>
+      </div>
     </div>
   </div>
 
-  </body>
+</body>
+
 </html>
